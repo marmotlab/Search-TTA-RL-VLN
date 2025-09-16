@@ -17,7 +17,7 @@
 
 <!-------------------- News -------------------->
 ## 📢 News
-* [Sep 2025]: We abstracted our codebase to work with custom score maps, environments, and target positions. Feel free to adapt this to your [navigation/search problem formulation](#custom-score-maps)! 🛩️
+* [Sep 2025]: We abstracted our codebase to work with custom score maps, environments, and planners. Feel free to adapt this to your [navigation/search problem formulation](#custom-score-maps)! 🛩️
 * [Sep 2025]: We release LISA-AVS, a [LISA](https://github.com/dvlab-research/LISA) 7B VLM finetuned on AVS-Bench to output score maps and text explanations given input satellite images and text queries. Check out our [LISA-AVS demo here](https://huggingface.co/spaces/derektan95/LISA-AVS-demo)! 🔥 
 * [Sep 2025]: We release our AVS RL policy pre-trained on [AVS-Bench](https://huggingface.co/datasets/derektan95/avs-bench) score maps 🦁  
 * [Sep 2025]: Initial release of Search-TTA and AVS-Bench. Check out our [Search-TTA demo here](https://huggingface.co/spaces/derektan95/search-tta-demo)! 🚀
