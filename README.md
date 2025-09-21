@@ -9,11 +9,12 @@
 <a href='https://huggingface.co/spaces/derektan95/LISA-AVS-demo'><img src='https://img.shields.io/badge/🤗%20LISA%20AVS-Demo-yellow'></a>
 
 
-<img src="assets/real_expt_crazyflie_yosemite.gif" width="90%"/>
+<!-- <img src="assets/real_expt_crazyflie_yosemite.gif" width="90%"/> -->
+<img src="assets/search_tta_turtle_example.gif" width="90%"/>
 
+Regulated change in heatmap region probabilities given measurements collected
 </div>
 
-<br>
 
 <!-------------------- News -------------------->
 ## 📢 News
@@ -245,6 +246,11 @@ Instead of retrieving targets from AVS-Bench, you can override the target positi
 ### Custom Planners
 
 Instead of using our Reinforcement Learning (RL) or Information Surfing (IS) based planner, you may use your own custom planners. For this, initialize another script that is similar to `test_worker.py` or `test_info_surfing.py`, and interface it with the Ray framework in `test_driver.py` and search environment in `env.py`.
+
+## 🛩️ ROS2 Integration
+<img src="assets/real_expt_crazyflie_yosemite.gif" width="90%"/>
+
+Please stay tuned for our Search-TTA ROS2 integration onto Gazebo simulation.
 
 <!-------------------- Acknowledgement -------------------->
 
