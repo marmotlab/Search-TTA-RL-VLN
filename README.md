@@ -32,11 +32,11 @@
 <!-- TODO: Change! Something more tied to VLNs -->
 Our work addresses the challenges of autonomous outdoor visual navigation and search where targets cannot be directly seen from satellite images. 
 We introduce <b>Search-TTA</b>, a multimodal test-time adaptatation framework that <b>signifiantly corrects poor VLM predictions due to domain mismatch or the lack of training data</b>, given various input modalities (e.g. image, text, sound) and planning methods (e.g. RL).
-Experiments demonstrate that Search-TTA significantly improves planner performance by up to 30%, and performs comparably to significantly larger state-of-the-art VLMs.
 Our contributions includes:
 * <b>AVS-Bench</b>: a large-scale dataset of satellite image to taxonomic target locations, paired with data of other modalities (i.e. image / text / sound).
 * <b>Multimodal Segmentation</b>: a methodology to generate CLIP score maps via inputs of various modality to guide the search planner.
 * <b>Test-Time Adaptation</b>: a statistical update procedure (via Spatial Poisson Point Processes) to refine score maps when gathering new measurements.
+<!-- Experiments demonstrate that Search-TTA significantly improves planner performance by up to 30%, and performs comparably to significantly larger state-of-the-art VLMs.-->
 
 <br>
 <div align="center">
