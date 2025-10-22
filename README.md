@@ -43,7 +43,7 @@ Our contributions includes:
     <img src="assets/yosemite_bear_poster.png" width="100%"/>
 </div>
 
-<b>`NOTE`</b>: You may skip to the [evaluation section](#evaluate-search-tta) for a quickstart guide (you'll need to install the [partial dataset](#satellite-images-and-sound-data)). 
+<b>`NOTE`</b>: You may skip to the [eval section](#evaluate-search-tta) for a quickstart guide (you'll need to install the [partial dataset](#satellite-images-and-sound-data)). 
 
 <!-------------------- Dataset -------------------->
 
@@ -85,7 +85,7 @@ Note that you should <b>download the partial dataset if you only want to run eva
 
 You must download the datasets from the above links, and organize them as follows. 
 
-`Note:` You will need to download at least the `partial datset` from above if you want to only perform evals. If you would like to train the satellite image or sound encoder, please download the `full dataset`.
+`Note`: You will need to download at least the `partial datset` from above if you want to only perform evals. If you would like to train the satellite image or sound encoder, please download the `full dataset`.
 The total partial dataset size for evals is ~2GB, while full dataset size for training is around ~350GB.
 
 ```
