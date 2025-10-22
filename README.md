@@ -226,7 +226,8 @@ Note that you will need to [download at least the partial dataset](#satellite-im
 
 ### Evaluate Search-TTA
 
-To run Search-TTA with RL or Information Surfing (IS) planner, follow the steps below. It automatically downloads the eval splits of [`tri_modal dataset`](https://huggingface.co/datasets/derektan95/avs-bench/viewer/search_tri_modal) and [`quad_modal dataset`](https://huggingface.co/datasets/derektan95/avs-bench/viewer/search_quad_modal), and the [`sat encoder`](https://huggingface.co/derektan95/search-tta-sat) and [`sound encoder`](https://huggingface.co/derektan95/search-tta-sound) checkpoints, all from Huggingface.
+To run Search-TTA with RL or Information Surfing (IS) planner, follow the steps below. 
+It automatically downloads the eval splits of [AVS-Bench](https://huggingface.co/datasets/derektan95/avs-bench) and the trained encoder checkpoints from Huggingface.
 You may test the performance of our approach on the image, text, or sound modalities on the different datasets.
 Note that you should adjust the `NUM_GPU` and `NUM_META_AGENTS` parameters in `parameter.py` to match your training hardware specifications.
 
