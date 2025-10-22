@@ -75,7 +75,7 @@ Note that you should <b>download the partial dataset if you only want to run eva
 * Sound + Ground Images: [Partial Eval](https://search-tta-datasets.s3.ap-southeast-2.amazonaws.com/sound_mp3_partial.zip), [Full Train](https://search-tta-datasets.s3.ap-southeast-2.amazonaws.com/sound_mp3.zip) 
 
 ### iNaturalist Ground Images
-Download the following datasets from the [iNaturalist 2021 Challenge](https://github.com/visipedia/inat_comp/tree/master/2021).
+Download the following datasets from the [iNaturalist 2021 Challenge](https://github.com/visipedia/inat_comp/tree/master/2021) using the links below.
 Note that you should <b>download the partial dataset if you only want to run evals</b>. 
 
 * Partial iNat Dataset: [Partial Images+Json](https://search-tta-datasets.s3.ap-southeast-2.amazonaws.com/inat21_partial.zip)
