@@ -68,7 +68,7 @@ We release the following [training & evaluation datasets]((https://huggingface.c
 
 ### Satellite Images and Sound Data
 For convenience, you may directly download the satellite images and sound zip files from the links below.
-Alternatively, you may run the scripts from `taxabind_avs/scripts/` that download data from Taxabind's [iSatNat](https://huggingface.co/datasets/MVRL/iSatNat) and [iSoundNat](https://huggingface.co/datasets/MVRL/iSoundNat) datasets. 
+Alternatively, you may run the scripts from `taxabind_avs/scripts/` that download data the Taxabind datasets. 
 Note that you should <b>download the partial dataset if you only want to run evals</b>. 
 
 * Satellite Images: [Partial Eval](https://search-tta-datasets.s3.ap-southeast-2.amazonaws.com/sat_jpg_512px_partial.zip), [Full Train](https://search-tta-datasets.s3.ap-southeast-2.amazonaws.com/sat_jpg_512px.zip)
