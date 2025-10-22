@@ -228,8 +228,8 @@ Note that you will need to [download at least the partial dataset](#satellite-im
 
 To run Search-TTA with RL or Information Surfing (IS) planner, follow the steps below. 
 It automatically downloads the eval splits of [AVS-Bench](https://huggingface.co/datasets/derektan95/avs-bench) and the trained encoder checkpoints from Huggingface.
-You may test the performance of our approach on the image, text, or sound modalities on the different datasets.
-Note that you should adjust the `NUM_GPU` and `NUM_META_AGENTS` parameters in `parameter.py` to match your hardware specifications.
+You may test our approach on image, text, or sound input modalities.
+Note that you should adjust `AVS dataset paths` and the `NUM_GPU` / `NUM_META_AGENTS` parameters in `parameter.py` to match your hardware specifications.
 
 ```bash
 # Adjust base parameters in planner/test_parameter.py
