@@ -43,7 +43,7 @@ Our contributions includes:
     <img src="assets/yosemite_bear_poster.png" width="100%"/>
 </div>
 
-`Note`: You may use this framework to conveniently run our RL/IS planners (or custom planners) on your custom score maps and envs for your own application. 
+<b>`NOTE`</b>: You may skip to the [evaluation section](#evaluate-search-tta) for a quickstart guide (you'll need to install the [partial dataset](#satellite-images-and-sound-data)). 
 
 <!-------------------- Dataset -------------------->
 
