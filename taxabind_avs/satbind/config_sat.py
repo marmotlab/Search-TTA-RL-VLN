@@ -9,11 +9,12 @@ from easydict import EasyDict as edict
 config = edict()
 
 # Pixel level CLIP training
-config.img_dir = '/mnt/hdd/avs_bench_ds/inat21' 
-config.imo_dir = '/mnt/hdd/avs_bench_ds/sat_jpg/train_512px'   
-config.imo_dir_val = '/mnt/hdd/avs_bench_ds/sat_jpg/test_512px'    
-config.train_json_path = '/mnt/hdd/avs_bench_ds/inat21/train.json' 
-config.val_json_path = '/mnt/hdd/avs_bench_ds/inat21/val.json' 
+config.avs_ds_dir = '/mnt/hdd/avs_bench_ds'
+config.img_dir = f'{config.avs_ds_dir}/inat21' 
+config.imo_dir = f'{config.avs_ds_dir}/sat_jpg/train_512px'   
+config.imo_dir_val = f'{config.avs_ds_dir}/sat_jpg/test_512px'    
+config.train_json_path = f'{config.avs_ds_dir}/inat21/train.json' 
+config.val_json_path = f'{config.avs_ds_dir}/inat21/val.json' 
 config.sat_to_img_ids_train_json_path = 'clip_tri_modal|train'
 config.sat_to_img_ids_val_json_path = 'clip_tri_modal|val'
 

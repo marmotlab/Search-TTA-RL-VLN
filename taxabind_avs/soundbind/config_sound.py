@@ -9,8 +9,9 @@ from easydict import EasyDict as edict
 config = edict()
 config.train_df = 'clip_quad_modal|train'
 config.val_df = 'clip_quad_modal|val'
-config.data_path_train = '/mnt/hdd/avs_bench_ds/sound_mp3/train'
-config.data_path_val = '/mnt/hdd/avs_bench_ds/sound_mp3/test'
+config.avs_ds_dir = '/mnt/hdd/avs_bench_ds'
+config.data_path_train = f'{config.avs_ds_dir}/sound_mp3/train'
+config.data_path_val = f'{config.avs_ds_dir}/sound_mp3/test'
 
 config.batch_size = 256
 config.lr = 1e-4

@@ -177,12 +177,12 @@ Note that you will need to [download the full dataset for training](#satellite-i
 ### SatBind
 To train the satellite image encoder, follow the steps below. 
 It automatically downloads the [`tri_modal dataset`](https://huggingface.co/datasets/derektan95/avs-bench/viewer/clip_tri_modal) from Huggingface, and trains the satellite image encoder to align to the same representation space as BioCLIP's ground image encoder.
-Note that you should adjust the `img_dir`, `imo_dir` and `json_path` parameters in `config.py` to match your downloaded dataset directories. 
+Note that you should adjust the `avs_ds_dir` parameter in `config_sat.py` to match your downloaded dataset directories. 
 We offer the [finetuned sat encoder checkpoint here](https://huggingface.co/derektan95/search-tta-sat).
 <!-- Adjust the `batch_size`, `accumulate_grad_batches`, `num_workers`, and `devices` parameters to match your training hardware specifications. -->
 
 ```bash
-cd taxabind_avs/satbind   # Adjust config.py
+cd taxabind_avs/satbind   # Adjust config_sat.py
 python model_sat.py
 tensorboard --logdir=lightning_logs
 ```
@@ -190,12 +190,12 @@ tensorboard --logdir=lightning_logs
 ### SoundBind
 To train the sound encoder, follow the steps below. 
 It automatically downloads the [`quad_modal dataset`](https://huggingface.co/datasets/derektan95/avs-bench/viewer/clip_quad_modal) from Huggingface, and trains the sound encoder to align to the same representation space as BioCLIP's ground image encoder.
-Note that you should adjust the `data_path` parameter in `config.py` to match your downloaded dataset directories. 
+Note that you should adjust the `avs_ds_dir` parameter in `config_sound.py` to match your downloaded dataset directories. 
 We offer the [finetuned sound encoder checkpoint here](https://huggingface.co/derektan95/search-tta-sound).  
 <!-- Adjust the `batch_size`, `accumulate_grad_batches`, `num_workers`, and `devices` parameters to match your training hardware specifications. -->
 
 ```bash
-cd taxabind_avs/soundbind   # Adjust config.py
+cd taxabind_avs/soundbind   # Adjust config_sound.py
 python model_sound.py
 tensorboard --logdir=lightning_logs
 ```
@@ -229,12 +229,21 @@ Note that you will need to [download at least the partial dataset](#satellite-im
 To run Search-TTA with RL or Information Surfing (IS) planner, follow the steps below. 
 It automatically downloads the eval splits of [AVS-Bench](https://huggingface.co/datasets/derektan95/avs-bench) and the trained encoder checkpoints from Huggingface.
 You may test our approach on image, text, or sound input modalities.
-Note that you should adjust `AVS dataset paths` and the `NUM_GPU` / `NUM_META_AGENTS` parameters in `test_parameter.py` to match your hardware specifications.
+Note that you should adjust `AVS_DS_DIR`, `NUM_GPU`, and `NUM_META_AGENTS` parameters in `test_parameter.py` to match your hardware specifications.
 
 ```bash
 # Adjust base parameters in planner/test_parameter.py
 cd eval/
-./eval_<MODE>.sh    # Adjust test-specific training parameters
+./eval_<MODE>.sh    
+```
+
+### Evaluate TTA on CLIP
+
+If you would like to evaluate TTA on CLIP (without emboodied search), follow the steps below.
+You should see regions with positive samples getting brighter, and regions with negative samples getting darker.
+```bash
+cd taxabind_avs/satbind
+python clip_seg_tta.py
 ```
 
 

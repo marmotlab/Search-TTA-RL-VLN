@@ -96,10 +96,11 @@ GAMMA_EXPONENT = 2
 
 # Paths related to AVS (TRAIN w/ TARGETS)
 LOAD_AVS_BENCH = True     # Whether to init AVS datasets 
-AVS_IMG_DIR = '/mnt/hdd/avs_bench_ds/inat21' 
-AVS_IMO_DIR = '/mnt/hdd/avs_bench_ds/sat_jpg/train_512px' 
-AVS_INAT_JSON_PATH = '/mnt/hdd/avs_bench_ds/inat21/train.json' 
-AVS_SOUND_DIR = '/mnt/hdd/avs_bench_ds/sound_mp3/test'
+AVS_DS_DIR = '/mnt/hdd/avs_bench_ds'
+AVS_IMG_DIR = f'{AVS_DS_DIR}/inat21' 
+AVS_IMO_DIR = f'{AVS_DS_DIR}/sat_jpg/train_512px'      # must use inat's train split (even for search-tta eval)
+AVS_INAT_JSON_PATH = f'{AVS_DS_DIR}/inat21/train.json' # must use inat's train split (even for search-tta eval)
+AVS_SOUND_DIR = f'{AVS_DS_DIR}/sound_mp3/test'
 AVS_GAUSSIAN_BLUR_KERNEL = (5,5)
 AVS_SAT_TO_IMG_IDS_PATH = getenv("AVS_SAT_TO_IMG_IDS_PATH", default="search_tri_modal|val_in_domain", cast_type=str)
 AVS_LOAD_PRETRAINED_HF_CHECKPOINT = getenv("AVS_LOAD_PRETRAINED_HF_CHECKPOINT", default=True, cast_type=bool)  # If false, load locally using CHECKPOINT_PATHs

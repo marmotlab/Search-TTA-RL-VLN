@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# For running pre-generated masks for AVS + RL Planner
+# For running pre-generated LISA masks for AVS + RL Planner
+# NOTE: Follow README.md to download LISA score maps.
 
 cd ../
 export POLICY="RL"
@@ -15,7 +16,7 @@ export SAVE_GIFS=False
 #======= LLMSeg =======#
 
 # Expt 1: ALL (Val_in)
-export OVERRIDE_MASK_DIR="maps/lisa/masks_val_in"
+export OVERRIDE_MASK_DIR="maps/lisa/val_in"
 export QUERY_TAX=""
 export AVS_SAT_TO_IMG_IDS_PATH="search_tri_modal|val_in_domain"
 
@@ -25,7 +26,7 @@ python -m planner.test_driver
 ############################################
 
 # Expt 2: ALL (Val_out)
-export OVERRIDE_MASK_DIR="maps/lisa/masks_val_out"
+export OVERRIDE_MASK_DIR="maps/lisa/val_out"
 export QUERY_TAX=""
 export AVS_SAT_TO_IMG_IDS_PATH="search_tri_modal|val_out_domain"
 
