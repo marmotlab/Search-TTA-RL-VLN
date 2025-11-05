@@ -86,7 +86,7 @@ Note that you should <b>download the partial dataset if you only want to run eva
 You must download the datasets from the above links, and organize them as follows. 
 
 `Note`: You will need to download at least the `partial datset` from above if you want to only perform evals. If you would like to train the satellite image or sound encoder, please download the `full dataset`.
-The total partial dataset size for evals is ~2GB, while full dataset size for training is around ~350GB.
+<!--The total partial dataset size for evals is ~2GB, while full dataset size for training is around ~350GB.-->
 
 ```
 ├── avs_bench_ds
