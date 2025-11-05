@@ -239,7 +239,7 @@ cd eval/
 
 ### Evaluate TTA on CLIP
 
-If you would like to evaluate TTA on CLIP (without emboodied search), follow the steps below.
+If you would like to evaluate TTA on CLIP (without embodied search), follow the steps below.
 You should see regions with positive samples getting brighter, and regions with negative samples getting darker.
 ```bash
 cd taxabind_avs/satbind
