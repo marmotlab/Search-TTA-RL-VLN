@@ -13,6 +13,7 @@
 <!-- <img src="assets/real_expt_crazyflie_yosemite.gif" width="90%"/> -->
 <img src="assets/search_tta_turtle_example.gif" width="90%"/>
 
+Search-TTA is agnostic to different robots (e.g. UAV / UGV / AUV) and planners (e.g. RL, Info Surfing).
 
 </div>
 
