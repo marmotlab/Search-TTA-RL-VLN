@@ -264,7 +264,7 @@ Instead of using our Reinforcement Learning (RL) or Information Surfing (IS) bas
 ## 🛩️ ROS2 Integration
 <img src="assets/real_expt_crazyflie_yosemite.gif" width="90%"/>
 
-Please stay tuned for our Search-TTA ROS2 integration with Gazebo simulation.
+Please stay tuned for our Search-TTA ROS2 integration with Gazebo simulation (for UGV / UAV).
 
 <!-------------------- Acknowledgement -------------------->
 
